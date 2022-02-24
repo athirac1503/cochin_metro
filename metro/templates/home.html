@@ -19,13 +19,16 @@
             margin: 0;
             
         }
-        a{
-            color: #fff;
-        }
-        .header{
+        .nav1{
             background-color: rgb(71, 2, 94);
             color: #fff;
             
+        }
+        a{
+            color: #fff;
+        }
+        a:hover{
+            color: #fff;
         }
         .body{
             background-image: url("{% static 'images/mback1.0.png' %}");             
@@ -50,7 +53,7 @@
         }
         h1{
             text-align: center;
-            padding-top: 40px;
+            padding-top: 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: 700;
             font-size: 60px;
@@ -90,15 +93,16 @@
             margin-left: 220px;
             color: rgb(99, 6, 117);
             background-color: rgba(243, 13, 174, 0.664);
-            border: solid 1px rgba(243, 238, 238, 0.479);
+            border: solid 1px rgb(94, 4, 102);
             border-radius: 20px;
             font-size:25px;font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-            margin-bottom: 800px;
+            
            
         }   
         .btn:hover{
             background-color:rgba(141, 1, 141, 0.801) ;
+            border: solid 1px rgb(94, 4, 102);
         }
        
        .row1{
@@ -171,30 +175,54 @@
        }
        .card-body{
            height: 200px;
-           
+           background-color:rgb(237, 173, 226);
+    
        }
+      
+      .card{
+          background-color: rgb(237, 173, 226);
+          cursor: pointer;
+      }
+      .card-title{
+          color:rgb(130, 8, 141);
+          font-weight: 500;
+      }
+     
        
        
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row header  ">
-            <div class="col-md-6">
-             <img  src="{% static 'images/metro1.png' %}" width="60px" width="60px" alt="">
-            </div>
-            <div style="padding-top: 10px;" class="col-md-2 text-center">
-             <a  href="">home</a>
-            </div>
-            <div style="padding-top: 10px;" class="col-md-2 text-center">
-             <a href="">About</a>
-            </div>
-            <div style="padding-top: 10px;" class="col-md-2 text-center">
-             <a href="">Contact</a>
-            </div>
-        </div>
- 
-    </div>
+    <!-- <div class="container-fluid"> -->
+        <nav class="navbar navbar-expand-lg navbar-light nav1 ">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+              <img  src="{% static 'images/metro1.png' %}" width="60px" width="60px" alt="">
+             </div>
+              <div class="collapse navbar-collapse col-md-2 col-sm-2 col-xs-2" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                  </ul>
+              </div>
+              
+              <div class="collapse navbar-collapse col-md-2 col-sm-2 col-xs-2" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  aria-current="page" href="{% url 'about' %}">About</a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="collapse navbar-collapse col-md-2 col-sm-2 col-xs-2" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  aria-current="page" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                  </ul>
+              </div>
+          </nav>
+    <!-- </div> -->
+  
     <div>
         <div class="container-fluid body ">
             <div class="row body">
@@ -217,8 +245,8 @@
             </div>
         </div>
     </div>
-   <div class="middile">
-    <div class="card-deck pt-5">
+<div class="middile">
+    <d   iv class="card-deck pt-5">
         <div class="card">
             <div class="mbox">
                 <img id="img1" src="{% static 'images/staion.png' %}" alt="">

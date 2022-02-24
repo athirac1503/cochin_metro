@@ -1,0 +1,184 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COCHIN_METRO</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <style>
+         .nav1{
+            background-color: rgb(0, 0, 0);
+            height: 70px;
+        }
+        .body{
+            background-image: url("{% static 'images/metrob.jpg' %}");
+            height: 660px;
+            width: 100%;
+      }
+      a{
+          color: #fff;
+      }
+      a:hover{
+          color: #fff;
+      }
+      .m1{
+         
+         width: 100%;
+         height: 600px;
+         padding-top: 50px;
+         padding-left: 450px;
+
+     }
+     .m2{
+         width: 450px;
+         height: 500px;
+         margin-top: 20px;
+         padding-top: 20px;
+         /* border: solid 1px rgb(0, 0, 0); */
+         /* border-radius: 50px; */
+         background-color: rgba(237, 237, 237, 0.789);  
+         text-align: center; 
+     }
+     .form-select{
+       width: 400px;
+       margin-left: 40px;
+     }
+     .form-select{
+       margin-top: 50px;
+       border-radius: 10px;
+       background-color: rgba(201, 200, 200, 0.35);
+       border: solid 1px rgb(181, 179, 179);
+
+     }
+     h4{
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: bolder;
+       margin-top: 40px;
+     }
+     .btn{
+       width: 300px;
+       margin-left: 80px;
+       margin-top: 50px;
+       background-color: black;
+       color: #fff;
+       font-weight: bold;
+       border-radius: 10px;
+
+     }
+     .btn:hover{
+       color: black;
+       background-color: #fff;
+       border: solid 1px black;
+     }
+      
+    </style>
+</head>
+<body>
+    <div class="body">
+        <nav class="navbar navbar-expand-lg navbar-light nav1 ">
+            <div class="col-md-6">
+              <img  src="{% static 'images/metro1.png' %}" width="60px" width="60px" alt="">
+             </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  aria-current="page" href="#">Home</a>
+                    </li>
+                  </ul>
+              </div>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  aria-current="page" href="#">About</a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  aria-current="page" href="#">Contact</a>
+                    </li>
+                  </ul>
+              </div>
+          </nav>
+          <div class="m1" >
+            <div class="m2">
+                <h4>BOOK QR TICKET</h4>
+                <form class="row g-3 fome1">
+                  <select id="inputState" class="form-select">
+                    <option selected>Ticket type</option>
+                    <option>SJT</option>
+
+                  </select>
+                  
+                    <select id="inputState" class="form-select">
+                        <option selected>Travel From</option>
+                        <option>Aluva</option>
+                        <option>Pulinchod</option>
+                        <option>Companypady</option>
+                        <option>Ambattukavu</option>
+                        <option>Muttom</option>
+                        <option>Kalamassery</option>
+                        <option>Cochin University</option>
+                        <option >Pathadipalam</option>
+                        <option >Edappally</option>
+                        <option >Changampuzha Park</option>
+                        <option >Palarivatom</option>
+                        <option >JLN stadium</option>
+                        <option >Kaloor</option>
+                        <option >Town Hall</option>
+                        <option >M G Road</option>
+                        <option >Maharaja's college</option>
+                        <option >Eranakulam South</option>
+                        <option >Kadavanthra</option>
+                        <option >Elamkulam</option>
+                        <option >Vytila</option>
+                        <option >Thykkoodam</option>
+                        <option >Petta</option>
+                      </select>
+                      <select id="inputState" class="form-select">
+                        <option selected>Travel To</option>
+                        <option>Aluva</option>
+                        <option>Pulinchod</option>
+                        <option>Companypady</option>
+                        <option>Ambattukavu</option>
+                        <option>Muttom</option>
+                        <option>Kalamassery</option>
+                        <option>Cochin University</option>
+                        <option >Pathadipalam</option>
+                        <option >Edappally</option>
+                        <option >Changampuzha Park</option>
+                        <option >Palarivatom</option>
+                        <option >JLN stadium</option>
+                        <option >Kaloor</option>
+                        <option >Town Hall</option>
+                        <option >M G Road</option>
+                        <option >Maharaja's college</option>
+                        <option >Eranakulam South</option>
+                        <option >Kadavanthra</option>
+                        <option >Elamkulam</option>
+                        <option >Vytila</option>
+                        <option >Thykkoodam</option>
+                        <option >Petta</option>
+                      </select>
+                      <button class="btn btn-light" type="submit">SUBMIT</button>
+                  
+                  </form>
+
+            </div>
+    
+        </div>
+    </div>
+   
+   
+</body>
+</html>
