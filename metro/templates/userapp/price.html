@@ -1,0 +1,81 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+    <style>
+        .box{
+            margin-top: 40px;
+            width: 1000px;
+            margin-left: 180px;
+        }
+        h5{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        h4{
+            /* margin-left: 200px; */
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        th{
+            width: 100px;
+        }
+    </style>
+
+    <div class=" container-fluid body">
+          <div class="box shadow-lg p-3 mb-5 bg-body rounded">
+              <h5>
+                Kochi Metro – Fare Chart (Ticket Prices)
+              </h5>
+              <p>Kochi Metro Rail Ltd. (KMRL) fixed Kochi Metro Line-1’s fares in November 2016 with a minimum 
+                  fare of Rs. 10 and maximum of Rs 60. Fare zones have been named F1, F2…F6, for distances ranging 
+                  from 2 km (F1) from the point of origin; 5 km (F2); 10 km (F3); and increase in multiples of 5 km 
+                  leading up to F6 (25 km from the point of origin). 
+                  The fare increases by Rs. 10 for every additional zone.</p>
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">Zone</th>
+                        <th scope="col">Distance from Origin</th>
+                        <th scope="col">Fare</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>F1</td>
+                        <td>2 km</td>
+                        <td>Rs. 10</td>
+                      </tr>
+                      <tr>
+                        <td>F2</td>
+                        <td>5 km</td>
+                        <td>Rs. 20</td>
+                      </tr>
+                      <tr>
+                        <td>F3</td>
+                        <td>10 km</td>
+                        <td>Rs. 30</td>
+                      </tr>
+                      <tr>
+                        <td>F4</td>
+                        <td>15 km</td>
+                        <td>Rs. 40</td>
+                      </tr>
+                      <tr>
+                        <td>F5</td>
+                        <td>20 km</td>
+                        <td>Rs. 50</td>
+                      </tr>
+                      <tr>
+                        <td>F6</td>
+                        <td>25 km</td>
+                        <td>Rs. 60</td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+                  <h4>Kochi Metro Fare Chart</h4>
+              <img  src="{% static 'images/pricechart.jpg' %}" alt="">
+              <p>KMRL currently runs services from 6 am to 10 pm by deploying Alstom metropolis trains on its Line-1.</p>
+          </div>
+    </div>
+{% endblock %}

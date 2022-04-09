@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'metro'
+    'metro',
+    'adminapp'
 ]
 
 MIDDLEWARE = [
@@ -120,7 +121,10 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIR=[
-    os.path.join(BASE_DIR,'myapp/static')
+    os.path.join(BASE_DIR,'metro/static'),
+    os.path.join(BASE_DIR,'adminapp/static')
+    # os.path.join(BASE_DIR,'a_dmin/static')
+
 ]
 
 # Default primary key field type

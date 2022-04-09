@@ -1,0 +1,70 @@
+{% extends 'userapp/master1.html' %}
+{% load static %}
+{% block user_profile %}
+<style>
+h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.bi{
+    padding-left: 30px;
+}
+h5 p{
+    padding-left: 30px;
+}
+h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    padding-top: 30px;
+}
+.table{
+    margin-top: 60px;
+    background-color: rgba(255, 253, 253, 0.4);
+    width: 800px;
+    margin-left: 49px;
+}
+</style>
+
+    
+   <div>
+       <h1>PAYMENT DETAILS</h1>
+       <table class="table shadow">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Travel from to</th>
+            <th scope="col">Payed amount</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>2/03/2022</td>
+            <td>9.00</td>
+            <td>Aluva to Petta</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>2/03/2022</td>
+            <td>9.00</td>
+            <td>Aluva to Muttom</td>
+            <td>80</td>
+          </tr>
+          <tr> <th scope="row">3</th>
+            
+            <td>2/03/2022</td>
+            <td>9.00</td>
+            <td>Town Hall to vytila</td>
+            <td>10</td>
+          </tr>
+        
+        </tbody>
+      </table>
+   </div>
+
+{% endblock %}

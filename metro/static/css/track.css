@@ -1,0 +1,40 @@
+.main{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.757) ;
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+h3{
+    margin-left: 20px;
+    padding-top: 30px;
+}
+.form-select{
+    width: 500px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border: solid 2px rgba(0, 0, 0, 0.55);
+}
+.bi{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 5px;
+    color: black;
+    margin-left: 250px;
+    padding-top: 20px;
+}
+.btn{
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 40px;
+    background-color: black;
+    color: #fff;
+    font-weight: bolder;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+    font-weight: bolder;
+    border: solid 2px black;
+}

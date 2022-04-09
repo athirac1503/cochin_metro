@@ -1,0 +1,51 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+    <style>
+    
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 40px;
+            /* color: #fff; */
+        }
+        .body{
+            background-image: url("{% static 'images/metrob.jpg' %}");
+            height: 660px;
+            width: 100%;
+          background-repeat: no-repeat;
+        } 
+        .b1{
+          width: 900px;
+          height: 500px;
+          background-color: rgba(255, 255, 255, 0.348);
+          margin-top: 30px;
+          margin-left: 200px;
+          padding-top: 1px;
+        }
+        p{
+          margin-top: 30px;
+          background-color: rgba(255, 255, 255, 0);
+          color: rgb(0, 0, 0);
+          font-weight: 500;
+          font-size: larger;
+        }
+
+       
+    </style>
+
+    <div class="body">
+       
+         
+            <div class="b1 shadow-lg p-3 mb-5  rounded">
+              <h1>ABOUT US</h1>
+              <p>This is our one of the most Project based on Cochin Metro Ticket Booking. We provide safe and simple way of 
+                ticket booking.This project presents a review on the the software program " Online Cochin Metro Ticket Booking system " 
+                as should be used in a metro transportation system, a facility which is used to booking tickets.</p>
+
+           </div>
+          >
+         
+    </div>
+{% endblock %}

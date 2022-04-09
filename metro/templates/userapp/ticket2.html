@@ -1,0 +1,80 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+  
+    <style>
+  
+      .book{
+       color: black;
+       font-size: large;
+       padding-left: 20px;   
+       font-weight: bold;    
+     }
+     .book:hover{
+       color: black;
+       font-weight: bold;
+     }
+     .main{
+       background-color: rgba(196, 193, 193, 0.308);
+       width: 100px;
+       height: 555px;
+       padding-top: 40px;
+     }
+     .shadow{
+         width: 500px;
+         height: 200px;
+         margin-top: 150px;
+         margin-left: 450px;
+         background-color: rgba(255, 255, 255, 0.802);
+     }
+     .btn{
+         margin-top: 60px;
+         margin-left: 500px;
+         background-color: black;
+         color: #fff;
+         font-weight: bold;
+         width: 400px;
+         border-radius: 10px;
+         border: solid 2px #fff;
+     }
+     .btn:hover{
+         border: solid 2px black;
+         background-color: #fff;
+         color: black;
+     }
+     .m1{
+       text-align: center;
+       margin-top: 40px;
+     }
+     .m2{
+       text-align: center;
+       margin-top: 40px;
+       font-size: 100px;
+     }
+  
+
+    </style>
+</head>
+<body>
+        <div class="container-fluid">
+          <div class="row shadow">
+
+                <div class="col-md-6 m1">
+                  <h4>Aluva</h4>
+                  <i class="bi bi-arrow-down" style="font-size: 2rem;"></i>
+                  <h4>Petta</h4>
+                </div>
+                <div class="col-md-6 m2">
+                  <hr>
+                  <h1>$ 60</h1>
+                  <hr>
+                </div>
+                
+            </div>
+            
+            <a class="btn btn-link" href="{% url 'payment' %}">Make Payment</a>
+
+           
+
+        </div>
+{% endblock %}

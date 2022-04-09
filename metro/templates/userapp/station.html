@@ -1,0 +1,448 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+    <style>
+      .m1{
+        background-color: #fff;
+        width: 100%;
+        height: 600px;
+        padding-top: 40px;
+      }
+      h1{
+        color: rgb(7, 2, 7);
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bolder;
+        
+      }
+       .colu{
+         width: 100xp;
+         height: 100px;
+         background-color: rgb(218, 218, 218);
+         border: solid 10px  #fff ;
+         margin-top: 40px;
+       } 
+       .colu1{
+         width: 100xp;
+         height: 100px;
+         background-color: #fff;
+         border: solid 10px  #fff ;
+         margin-top: 40px;
+       } 
+       
+       .colu:hover{
+        background-color: rgb(175, 175, 175);
+       }
+       h3{
+         font-family: 'Times New Roman', Times, serif;
+         font-size: larger;
+         font-weight: bold;
+         text-align: center;
+         padding-top: 20px;
+         color: rgb(0, 0, 0);
+         cursor: pointer;
+       }
+       h3:hover{
+         color: #fff;
+       }
+       .m2{
+         padding-top: 90px;
+       }
+       img{
+         cursor: pointer;
+       }
+       h4{
+         color: rgb(128, 127, 126);
+       }
+       /* .card{
+         transition-property: all;
+       } */
+       .card:hover{
+         background-color: rgb(235, 235, 235);
+         
+       }
+       .bi{
+         color: #fff;
+        padding-left: 30px;
+       }
+       .icon{
+         color: #fff;
+       }
+      
+
+    </style>
+ 
+    <div class="m1">
+     <h1> STATIONS IN COCHIN METRO</h1>
+     <div class="container-fluid">
+       <div class="row">
+         <div class="col-md-2 colu">
+            <a href="#a1"><h3>Aluva</h3></a>
+            <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  122.04 km</p>
+         </div>
+         <div class="col-md-2 colu">
+           <a href="#a2"> <h3>Pulinchod</h3></a>
+           <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  123.37 km</p>
+        </div> 
+        <div class="col-md-2 colu">
+          <a href="#a3"><h3>Companypady</h3></a>
+          <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  123.98 km</p>
+        </div>
+        <div class="col-md-2 colu">
+          <a href="#a4"><h3>Ambattukavu</h3></a>
+          <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  124.59 km</p>
+        </div>
+        <div class="col-md-2 colu">
+         <a href="#a5"> <h3>Muttom</h3></a>
+         <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  125.01 km</p>
+        </div>
+        <div class="col-md-2 colu">
+          <a href="#a6"><h3>Kalamassery</h3></a>
+          <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  125.9 km</p>
+        </div> 
+        <div class="col-md-2 colu">
+          <a href="#a7"><h3>Cochin University</h3></a>
+          <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  126.95 km</p>
+        </div>
+        <div class="col-md-2 colu">
+          <a href="#a8"><h3>Pathadipalam</h3></a>
+          <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  127.85 km</p>
+       </div> 
+       <div class="col-md-2 colu">
+        <a href="#a9"><h3>Edappally</h3></a>
+        <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  128.72 km</p>
+       </div>
+       <div class="col-md-2 colu">
+        <a href="#a10"><h3>Changampuzha Park</h3></a>
+        <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  129.49 km</p>
+       </div>
+       <div class="col-md-2 colu">
+        <a href="#a11"><h3>Palarivatom</h3></a>
+        <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  130.49 km</p>
+       </div>
+       <div class="col-md-2 colu">
+        <a href="#a12"><h3>JLN stadium</h3></a>
+          <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  130.85 km</p>
+        
+       </div> 
+       <div class="col-md-2 colu">
+        <a href="#a13"><h3>Kaloor</h3></a>
+        <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  131.16 km</p>
+      </div>
+      <div class="col-md-2 colu">
+        <a href="#a14"><h3>Town Hall</h3></a>
+        <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  131.37 km</p>
+     </div> 
+     <div class="col-md-2 colu">
+      <a href="#a15"><h3>M G Road</h3></a>
+      <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  131.79 km</p>
+     </div>
+     <div class="col-md-2 colu">
+      <a href="#a16"><h3>Maharaja's college</h3></a>
+      <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  133.09 km</p>
+     </div>
+     <div class="col-md-2 colu">
+      <a href="#a17"><h3>Eranakulam South</h3></a>
+      <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  133.64 km</p>
+     </div>
+     <div class="col-md-2 colu">
+     <a href="#a18"> <h3>Kadavanthra</h3></a>
+     <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  134.31 km</p>
+     </div> 
+     <div class="col-md-2 colu">
+      <a href="#a19"><h3>Elamkulam</h3></a>
+      <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  134.47 km</p>
+    </div>
+    <div class="col-md-2 colu">
+      <a href="#a20"><h3>Vytila</h3></a>
+      <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  134.94 km</p>
+   </div> 
+   <div class="col-md-2 colu">
+    <a href="#a21"><h3>Thykkoodam</h3></a>
+    <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  136.14 km</p>
+   </div>
+   <div class="col-md-2 colu">
+   <a href="#a22"> <h3>Petta</h3></a>
+   <p class="icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i>  137.41 km</p>
+   </div>
+   <div class="col-md-2  colu1">
+   
+   </div>
+   <div class="col-md-2  colu1">
+    
+   </div>
+       </div>
+
+     </div>
+    </div>
+    <div class="m2">
+      
+     <div class="row">
+      <div class="card col-md-3" id="a1" style="width: 18rem; display: flex;">
+        <a href="https://www.google.com/maps/search/aluva+map+picture/@10.0462108,76.2226608,11z/data=!3m1!4b1"><img src="{% static 'images/aluva.jfif' %}" class="card-img-top pl-3 pt-3" alt="..." height="200px" width="600px" ></a>
+        <div class="card-body">
+          <h4>Aluva</h4>
+          <h6>Station Address</h6>
+          <p>Aluva Metro station,Aluva,Periyar Nagar,aluva,Kerala 683101</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+          
+        </div>
+      </div>
+      <div class="card col-md-3" id="a2" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Pulinchodu/@10.0951,76.3444113,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080ec4a13a5583:0xdadcc868b230d64f!8m2!3d10.0951!4d76.3466"> <img src="{% static 'images/pili.jpg'%}" class="card-img-top pt-3" alt="..." height="200px"></a>
+        <div class="card-body">
+          <h4>Pulinchod</h4>
+            <h6>Station Address</h6>
+            <p >Pulinchode,Kunnathery Thikavu,aluva,Kerala 683101</p>
+            <h6>Metro Platform Type</h6>
+            <p>side</p>
+            <h6>Metro contact Number</h6>
+            <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a3" style="width: 18rem;">
+       <a href="https://www.google.com/maps/place/Companypady/@10.0873,76.3406113,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080ec05032e0f5:0xc975eb4323679ba8!8m2!3d10.0873!4d76.3428?hl=en-GB"> <img src="{% static 'images/kam.jfif'%}" class="card-img-top pt-3" alt="..." height="200px"></a>
+       <div class="card-body">
+        <h4>Companypady</h4>
+        <h6>Station Address</h6>
+        <p>Companyppadi,choornikkara,aluva,Kerala 683101</p>
+        <h6>Metro Platform Type</h6>
+        <p>side</p>
+        <h6>Metro contact Number</h6>
+        <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a4" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Ambattukavu,+Choornikkara,+Aluva,+Kerala+683501/@10.0808187,76.335876,16z/data=!3m1!4b1!4m5!3m4!1s0x3b080e95c455e8a9:0xb6b4709b89816649!8m2!3d10.0801785!4d76.3398496"> <img src="{% static 'images/amba.jpg'%}" class=" border-top card-img-top pt-3" alt="..." height="200px"></a>
+
+        <div class="card-body">
+          <h4>Ambattukavu</h4>
+          <h6>Station Address</h6>
+          <p>Ambattukavu,Choornikaraaluva,Kerala 683106</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a5" style="width: 18rem;">
+        <a href="https://www.google.com/maps/search/Muttom+map+images/@9.0952657,76.4724161,9z/data=!3m1!4b1"> <img src="{% static 'images/muttom.jpg'%}" class=" border-top card-img-top pt-3 pl-3" alt="..." height="200px"></a>
+
+        <div class="card-body">
+          <h4>Muttom</h4>
+          <h6>Station Address</h6>
+          <p>Muttom,Choornikkara,Kerala 683101</p>
+          <h6>Metro Platform Type</h6>
+          <p>Island</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a6" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Kalamassery,+Kochi,+Kerala/@10.0531493,76.3528075,13z/data=!4m13!1m7!3m6!1s0x3b080c269c104ecd:0x845435f558157962!2sKalamassery,+Kochi,+Kerala!3b1!8m2!3d10.0531493!4d76.3528075!3m4!1s0x3b080c269c104ecd:0x845435f558157962!8m2!3d10.0531493!4d76.3528075"><img src="{% static 'images/kalam.jfif' %}" height="200px" class="card-img-top pt-3" alt="..."></a> 
+        <div class="card-body">
+         <h4> Kalamassery</h4>
+        
+         <h6>Station Address</h6>
+         <p>Kalamasseri,Ernakulam,Kerala 683104</p>
+         <h6>Metro Platform Type</h6>
+         <p>side</p>
+         <h6>Metro contact Number</h6>
+         <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a7" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Cochin+University+of+Science+and+Technology/@10.044334,76.3260451,17z/data=!4m5!3m4!1s0x3b080c377917e985:0xb0fd4b1e85a6e51f!8m2!3d10.044334!4d76.3282338"><img src="{% static 'images/uni.jpg' %}" height="200px" class="card-img-top pt-3" alt="..."></a> 
+        <div class="card-body">
+          <h4>Cochin University</h4>
+          <h6>Station Address</h6>
+          <p>South Kalamassery,Kalamassery,Eranakulam,Kerala 682039</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a8" style="width: 18rem;">
+         <a href="https://www.google.com/maps/place/Pathadippalam/@10.0361,76.3122113,17z/data=!4m5!3m4!1s0x3b080db45fd969d7:0x7cbab83429b3deb6!8m2!3d10.0360981!4d76.3144043?hl=en-GB"><img src="{% static 'images/patha.jpg' %}" height="200px" class=" pt-3 card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h4>Pathadipalam</h4>
+          <h6>Station Address</h6>
+          <p>Koonamthai Pathadipalam,Edappally,ernakulam,Kerala 682024</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a9" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Edappally,+Kochi,+Kerala/@10.0263949,76.2946117,14z/data=!3m1!4b1!4m9!1m2!2m1!1sEdappally+map+image!3m5!1s0x3b080da53444d5e9:0xb46c57c6b1bc9aff!8m2!3d10.0260688!4d76.3124753!15sChNFZGFwcGFsbHkgbWFwIGltYWdlkgEMc3VibG9jYWxpdHkx?hl=en-GB"><img src="{% static 'images/eda.jpg' %}" height="200px" class="card-img-top pt-3 pl-3" alt="..."></a> 
+        <div class="card-body">
+          <h4>Edappally</h4>
+          <h6>Station Address</h6>
+          <p>Edappally,Eranakulam,Kerala 682024</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a10" style="width: 18rem;">
+       <a href="https://www.google.com/maps/place/Changampuzha+Park/@10.0136511,76.3002324,18z/data=!4m9!1m2!2m1!1sChangampuzha+Park+map+image!3m5!1s0x3b080d09a86a1bf7:0x3f76dd4c77635b14!8m2!3d10.0152041!4d76.3023872!15sChtDaGFuZ2FtcHV6aGEgUGFyayBtYXAgaW1hZ2WSAQ5zdWJ3YXlfc3RhdGlvbg?hl=en-GB"><img src="{% static 'images/changa.jpg' %}" height="200px" class="card-img-top pt-3" alt="..."></a> 
+        <div class="card-body">
+          <h4>Changampuzha Park</h>
+          <h6>Station Address</h6>
+          <p>Palarivattom-Edappally Rd,Devankulangara,Edappally,Eranakulam,Kerala 682025</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a11" style="width: 18rem;">
+        <a href="https://www.google.com/maps/search/Palarivatom++image/@10.0005736,76.3028751,16z/data=!3m1!4b1?hl=en-GB"><img src="{% static 'images/pala.jfif'%}" height="200px" class="card-img-top pt-3" alt="...">
+          <div class="card-body"></a> 
+          <h4>Palarivatom</h4>
+          <h6>Station Address</h6>
+          <p>Palarivattom,erankulam,Kerala 682025</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a12" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/JLN+Stadium/@10.0002281,76.2988807,5z/data=!4m9!1m2!2m1!1sJLN+stadium+images!3m5!1s0x3b080d141417b291:0x1d8f195eed3e3e5d!8m2!3d10.000221!4d76.2988863!15sChJKTE4gc3RhZGl1bSBpbWFnZXOSAQ5zdWJ3YXlfc3RhdGlvbg"><img src="{% static 'images/jnl.jpg' %}" height="200px" class="card-img-top pt-3 " alt="..."></a>
+        <div class="card-body">
+          <h4>JLN stadium</h4>
+          <h6>Station Address</h6>
+          <p>JNL International Stadium,Kaloor,Palarivattom,Kochi,Kerala 682025</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a13" style="width: 18rem;">
+         <a href="https://www.google.com/maps/search/kaloor++images/@9.9939773,76.2792693,14z/data=!3m1!4b1"><img src="{% static 'images/kaloor.jfif' %}" height="200px" class="card-img-top pt-3 pl-3" alt="..."></a>
+        <div class="card-body">
+          <h4>Kaloor</h4>
+          <h6>Station Address</h6>
+          <p>Banerji Rd,Kaloor,Ernkulam,Kerala 682017</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a14" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/ERNAKULAM+TOWN+HALL/@9.9880702,76.2841219,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080de2db2d7739:0x930145d9fd53d32f!8m2!3d9.9880708!4d76.2863083"> <img src="{% static 'images/erana.jpg' %}" height="200px" class=" pt-3 card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h4>Town Hall</h4>
+          <h6>Station Address</h6>
+          <p>Ernakulam North,Kaloor,Ernakulam,Kerala 682017</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a15" style="width: 18rem;">
+       <a href="https://www.google.com/maps/place/Mahatma+Gandhi+Rd,+Kochi,+Kerala/@9.9648001,76.2848313,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080d5ac142675f:0x496d3b3a330d1713!8m2!3d9.9648001!4d76.28702?hl=en-GB"><img src="{% static 'images/mg.jpg' %}" height="200px" class=" pt-3 card-img-top" alt="..."></a> 
+        <div class="card-body">
+          <h4>M G Road
+          </h4>
+          <h6>Station Address</h6>
+          <p>Padma Junction,Pullepady,Ernakulam,Kerala 682035</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a16" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/MAHARAJA'S+COLLEGE+ERNAKULAM/@9.9701875,76.2793637,17z/data=!3m1!4b1!4m5!3m4!1s0x3b080d4d47736073:0x502e8548fe77d9ae!8m2!3d9.9701875!4d76.2815524?hl=en-GB"><img src="{% static 'images/maha.jpg' %}"  class="card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h4>Maharaja's college</h4>
+          <h6>Station Address</h6>
+          <p>Mahatma Gandhi Rd,Shenoys,Ernakulam,Kerala 682011</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a17" style="width: 18rem;">
+         <a href="https://www.google.com/maps/place/Ernakulam+South/@9.9685053,76.2871113,17z/data=!3m1!4b1!4m5!3m4!1s0x3b0872b41b63ccf7:0x80042ab04a70af14!8m2!3d9.9685!4d76.2893?hl=en-GB"><img src="{% static 'images/sout.jpg'%}" height="200px" class="card-img-top pt-3 pl-3" alt="..."></a>
+        <div class="card-body">
+          <h4>Eranakulam South</h4>
+          <h6>Station Address</h6>
+          <p>Ernakulam South,Kochi,Kerala </p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a18" style="width: 18rem;">
+       <a href="https://www.google.com/maps/place/Kadavanthra,+Kochi,+Kerala+682020/@9.9566929,76.2944032,15z/data=!3m1!4b1!4m5!3m4!1s0x3b0872cb66c596cb:0xd0c2654dc1875acb!8m2!3d9.9541744!4d76.3023978?hl=en-GB"><img src="{% static 'images/kada.jpg' %}" height="200px" class="pt-3 card-img-top" alt="..."></a> 
+        <div class="card-body">
+          <h4>Kadavanthra</h4>
+          <h6>Station Address</h6>
+          <p>Sahodaran ayyappan Rd,Kadavanthra,ernakulam,Kerala 682020</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a19" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Elamkulam+Bridge,+Ernakulam,+Kerala/@9.9673465,76.3072756,17z/data=!3m1!4b1!4m5!3m4!1s0x3b0872d10dd9f1b3:0xe8e53dfa165fc04f!8m2!3d9.9673465!4d76.3094643?hl=en-GB"><img src="{% static 'images/elam.jfif' %}" height="200px" class=" pt-3 card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h4>Elamkulam</h4>
+          <h6>Station Address</h6>
+          <p>Sahodaran ayyappan Rd,elamkulam,Kadavanthra,Kochi,Kerala 682020</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>        </div>
+      </div>
+      <div class="card col-md-3" id="a20" style="width: 18rem;">
+        <a href="https://www.google.com/maps/place/Vyttila,+Kochi,+Kerala/@9.9685471,76.2951828,14z/data=!3m1!4b1!4m5!3m4!1s0x3b0872d782befefb:0x4175325de985fc4b!8m2!3d9.968199!4d76.3182346"><img src="{% static 'images/vay.jpg' %}" height="200px" class=" pt-3 card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h4>Vytila</h4>
+          <h6>Station Address</h6>
+          <p>Vyttila,Ernakulam,Kerala 682019</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a21" style="width: 18rem;">
+       <a href="https://www.google.com/maps/place/Thykoodam,+Vyttila,+Ernakulam,+Kerala/@9.9580459,76.3117771,15z/data=!3m1!4b1!4m5!3m4!1s0x3b087323fad926ad:0x3cee66d2b6223f22!8m2!3d9.9572153!4d76.3217567"><img src="{% static 'images/thay.jpg' %}" height="200px" class="pt-3 card-img-top" alt="..."></a> 
+        <div class="card-body">
+          <h4>Thykkoodam</h4>
+          <h6>Station Address</h6>
+          <p>Thykoodam,Vyttila,Ernakulam,Kerala 682019</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+      <div class="card col-md-3" id="a22" style="width: 18rem;">
+       <a href="https://www.google.com/maps/place/Petta,+Poonithura,+Maradu,+Ernakulam,+Kerala/@9.9502138,76.3300074,17z/data=!3m1!4b1!4m5!3m4!1s0x3b087316fcf35d39:0x7cf6121ae0e7e16e!8m2!3d9.9503088!4d76.3320699?hl=en-GB"> <img src="{% static 'images/petta.jpg' %}" height="200px" class=" pt-3 card-img-top" alt="..."></a>
+        <div class="card-body">
+          <h4>Petta
+          </h4>
+          <h6>Station Address</h6>
+          <p>Petta,Petta Road,Poonithura,Thrippunithura,ernakulam,Kerala 682038</p>
+          <h6>Metro Platform Type</h6>
+          <p>side</p>
+          <h6>Metro contact Number</h6>
+          <p>1800 425 0355 <br>+91-484-2380980</p>
+        </div>
+      </div>
+     
+     </div>
+     
+
+    </div>
+    
+{% endblock %}

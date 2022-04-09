@@ -1,0 +1,47 @@
+{% extends 'admin_app/admin_master.html' %}
+{% load static %}
+{% block admin_profile %}
+<link rel="stylesheet" href="{% static 'css/aprofile.css' %}">
+
+  </style>
+  
+      
+      <i class="bi bi-person-circle ml-5" style="font-size: 3rem;"></i>
+      <h1 >Profile</h1><hr>
+      <h5 class="ml-5">Athira c</h5>
+      <p class="ml-5">athirac1503@gmail.com</p>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputFname4" placeholder="First Name">
+          <!-- <p id="p2">*Please fill</p> -->
+        </div>
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="inputLname4" placeholder="Last Name">
+          <!-- <p id="p3">*Please fill</p> -->
+        </div>
+        <div class="col-12">
+          <input type="email" class="form-control f1" id="inputEmail4" placeholder="Email">
+          <!-- <p id="p4">*Enter your Email address</p> -->
+        </div>
+        <div class="col-6">
+          <input type="date" class="form-control" id="inputEmail4" placeholder="Date of birth">
+          <!-- <p id="p4">*Enter your Email address</p> -->
+        </div>
+        <div class="dropdown col-6 radio1">
+          <label for="">Gender: </label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="">Female</label>&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="gender">&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="">Male</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="radio" id="gender">&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+       
+        <div class="col-12">
+          <input type="password" class="form-control f1" id="inputPassword4" placeholder="Address">
+          <!-- <p id="p1">*Enter your Password</p> -->
+        </div>     
+        <div class="col-12">
+          <a  class="btn btn-light" id="sign" href="">Save </a>
+        </div>
+      </form>
+
+  {% endblock %}

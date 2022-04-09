@@ -1,0 +1,29 @@
+{% extends 'admin_app/admin_master.html' %}
+{% load static %}
+{% block admin_profile %}
+<link rel="stylesheet" href="{% static 'css/station.css' %}">
+
+<h1>ADD STATION</h1>
+
+<form>
+    <div class="row row1 mb-3">
+      <label for="inputfair" class="col-sm-2 col-form-label">Station Name</label> 
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="row row1 mb-3">
+      <label for="inputfair" class="col-sm-2 col-form-label">Latitude</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputEmail3">
+      </div>
+    </div>
+    <div class="row row1 mb-3">
+        <label for="inputfair" class="col-sm-2 col-form-label">lognitude</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+    <button type="submit" class="btn btn-light">UPDATE</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,29 @@
+h1{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.bi{
+    padding-left: 30px;
+}
+h5 p{
+    padding-left: 30px;
+}
+.form-control{
+    width: 400px;
+    margin-left: 20px;
+}
+.f1{
+    width: 865px;
+}
+.radio1{
+    /* margin-left:10px; */
+    padding-left: 20px;
+}
+.btn{
+    width: 865px;
+    color: #fff;
+    background-color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+
+}

@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>COCHIN METRO</title>
+    <link rel="icon" type="images/x-icon" href="{% static 'images/metro1.png' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        .nav1{
+            background-color: rgb(0, 0, 0);
+            height: 70px;
+        }
+       .a1{
+            color: #fff;
+        }
+        .a1:hover{
+            color: #fff;
+        }
+        .body{
+            background-image: url("{% static 'images/metrob.jpg' %}");
+            height: 660px;
+            width: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        h2{
+            color: #fff;
+            margin-top:30px ;
+        }
+        li{
+            list-style: none;
+            color: #fff;
+        }
+        a{
+            color: #fff;
+            
+        }
+        .l1{
+            padding-top: 50px;
+        }
+
+        #menu .items li:hover{
+        background: rgb(27, 26, 26);
+    }
+    .box1{
+        background-color: rgba(0, 0, 0, 0.816);
+        width: 400px;
+        height: 100%;
+    }
+    #menu .logo{
+        display: flex;
+        align-items: center;
+        color: azure;
+        padding: 30px 0 0 30px;
+
+    }
+    #menu .logo img{
+        width: 100px;
+        margin-right: 15px;
+    }
+    #menu .items{
+        margin-top: 80px;
+    }
+    #menu .items li{
+        list-style: none;
+        padding: 40px;
+    }
+    #menu .items li a{
+        text-decoration: none;
+        color: rgb(243, 243, 232);
+       
+    }
+    .main{
+    background-color: rgba(255, 255, 255, 0.829);
+    width: 900px;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+    
+        
+       
+    </style>
+</head>
+<body>
+    <div class="body">
+        <nav class="navbar navbar-expand-lg navbar-light nav1 ">
+            <div class="col-md-4">
+              <img  src="{% static 'images/metro1.png' %}" width="60px" width="60px" alt="">
+             </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="a1"  aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                  </ul>
+              </div>
+              
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="a1"  aria-current="page" href="{% url 'about' %}">About</a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a  class="a1" aria-current="page" href="{% url 'contact' %}">Contact</a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a  aria-current="page" href="{% url 'aprofile' %}"><i class="bi bi-person-circle" style="color: #fff; font-size: 2rem; "></i></a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+          <div class="row">
+              <div class="col-md-3 box1">
+                <section id="menu">
+                    <div class="logo">
+                       <h2>Cochin Metro</h2><hr>
+                    </div>
+                    <div class="items">
+                       <li class="l1"><a href="{% url 'ad_station' %}">Add station</a></li>
+                       <!-- <li class="l1"><a href="{% url 'rout' %}">Add rout</a></li> -->
+                       <li class="l1"><a href="{% url 'train' %}">Add Train</a></li>
+                       <li class="l1"><a href="{% url 'fair' %}">Fair details</a></li>
+                       <li class="l1"><a href="{% url 'complaints' %}">Massage </a></li>
+                       <li class="l1"><a href="{% url 'ad_logout' %}">log out</a></li>
+
+                    </div>
+                  </section>
+
+              </div>
+              <div class="col-md-9">
+                  
+                <div class="main shadow">
+    
+                    {% block admin_profile %}
+
+                    {% endblock %}
+                </div>
+
+                
+              </div>
+          </div>
+
+        
+    </div>

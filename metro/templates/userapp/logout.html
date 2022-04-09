@@ -1,0 +1,34 @@
+{% extends 'userapp/master1.html' %}
+{% load static %}
+{% block user_profile %}
+  <style>
+    .bi{
+        margin-left: 400px;
+        color: brown;
+    }
+    .btn{
+        color: #fff;
+        background-color: black;
+        margin-top: 40px;
+        width: 300px;
+    }
+    .btn:hover{
+        color: black;
+        background-color: #fff;
+        border: solid 2px black;
+    }
+  </style>  
+
+
+<div >
+    <i class="bi bi-box-arrow-right" style="font-size: 7rem;"></i>
+   <center>
+    <h4>
+        Oh no! You're  leaving...... <br>Are you sure?
+    </h4>
+    <a class="btn btn-light" href="{% url 'new' %}">Yes</a><br>
+    <a class="btn btn-light" href="">No</a>
+   </center>
+</div>
+
+{% endblock %}

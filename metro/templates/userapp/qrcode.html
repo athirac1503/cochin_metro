@@ -1,0 +1,92 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+
+<style>
+    .m1{
+        width: 300px;
+        height: 400px;
+        background-color: rgba(196, 196, 196, 0.727);
+        margin-left: 500px;
+        padding-left: 47px;
+        padding-top: 20px;
+        /* margin-top: 20px; */
+    }
+    .p1{
+        text-align: center;
+        margin-top: 100px;
+        color: black;
+        font-weight: 500;
+    }
+    .p2{
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    .m2{
+        width: 200px;
+        height: 100px;
+        background-color: #fff;
+        margin-right: 20px;
+    }
+    .one{
+        font-size: x-small;
+        color: rgb(10, 72, 79);  
+        margin-left: 5px;
+        font-weight: bold;
+          }
+    .one1{
+        font-size: x-small;
+        margin-left: 10px;
+        color: black;
+
+    }
+    h6{
+        margin-left: 10px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .two{
+        color: rgb(8, 14, 184);
+        font-size: 10px;
+        font-weight: bold;
+        margin-left: 20px;
+    
+    }
+</style>
+<p class="p1">Scan This QR code at Metro <br> Entry and Exit point</p>
+<div class="m1">
+    <img src="{% static 'images/qrcode.png' %}" width="200px" alt="">
+
+        <p class="p2">Expires :23/01/2021, 9.30 AM </p>
+        <div class="m2">
+            <h6>Payment</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="one">Type</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="one">Passenger</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="one">Amount</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="one1">SJT</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="one1">1</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="one1">$ 60</p>
+                </div>
+                <a href="{% url 'upayment' %}"><p class="two"> View Payment Details </p>
+                </a>
+            </div>
+        </div>
+    
+</div>
+
+
+
+
+{% endblock %}

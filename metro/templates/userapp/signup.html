@@ -1,0 +1,163 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+    <style>
+
+      .m1{
+          
+          width: 100%;
+          height: 600px;
+          padding-top: 50px;
+          padding-left: 450px;
+
+      }
+      .m2{
+          width: 450px;
+          height: 500px;
+          /* border: solid 1px rgb(0, 0, 0); */
+          /* border-radius: 50px; */
+          background-color: rgba(237, 237, 237, 0.789);
+          /* text-align: center;  */
+          padding-top: 20px;
+      }
+      h2{
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bold;
+          color: rgb(0, 0, 0);
+          margin-top: 10px;
+      }
+      .btn{
+        /* margin-right: 38px; */
+          margin-top: 10px;
+          width: 250px;
+          background-color: rgb(0, 0, 0) ;
+          border: solid 1px rgb(0, 0, 0);;
+          border-radius: 10px;
+          font-weight: bold;
+          color: #fff;
+          margin-left: 100px;
+      }
+      .btn:hover{
+        border: solid 1px rgb(0, 0, 0);;
+        background-color: rgb(252, 252, 252);
+        color: black;
+        font-weight: bold;
+      }
+      .form-control{
+          width: 400px;
+          margin-left: 20px;
+          border: solid .5px black;
+          border-radius: 5px;
+          background-color: rgba(237, 237, 237, 0.789);
+          margin-top: 10px;
+      }
+      #inputFname4{
+          width: 200px;
+      }
+      #inputLname4{
+        width: 160px;
+        margin-right: 20px;
+      }
+      span{
+          color: blueviolet;
+      }
+      h2{
+        text-align: center;
+      }
+      #div1{
+        margin-left: 80px;
+        
+      }
+      #gridCheck{
+        margin-left: 50px;
+      }
+      p{
+        font-size: 10px;
+        margin-left: 40px;
+        color: red;
+        display: none;
+      }
+      
+    </style>
+
+  <div class="body">
+      <div class="m1">
+          <div class="m2">
+              <h2>SIGN UP</h2>
+              <form class="row g-3">
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputFname4" placeholder="First Name">
+                    <p id="p2">*Please fill</p>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="inputLname4" placeholder="Last Name">
+                    <p id="p3">*Please fill</p>
+                  </div>
+                  <div class="col-12">
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <p id="p4">*Enter your Email address</p>
+                  </div>
+                  <div class="col-12">
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                    <p id="p1">*Enter your Password</p>
+                  </div>
+                  <div class="col-12">
+                      <input type="password" class="form-control" id="inputcPassword4" placeholder="Confirm Password">
+                      <p id="p5">*Please fill</p>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                       <div id="div1"> I accept the <span>Terms of use </span> & <span>Privacy Policy</span></div>
+                      </label>
+                    </div>
+                  <div class="col-12">
+                    <a  class="btn btn-light" id="sign" href="">Sign Up </a>
+                  </div>
+                </form>
+             
+      </div>
+  </div>
+  {% endblock %}
+
+  <!-- <script>
+    $(document).ready(function(){
+    $('#sign').click(function(){
+      var fname=$('#inputFname4')
+      if(fname.val()==""){
+        $('#p2').html()="Must Be 10 letter"
+        $('#inputFname4').css({'border':'solid 2px red'})
+        return false
+      }
+      else{
+        $('#inputFname4').css({'border':' solid 1px black'})
+        $('#p2').hide()
+      }
+    
+      var Lname=$('#inputLname4')
+      if(Lname.val()==""){
+        $('#p3').show()
+        $('#inputLname4').css({'border':'solid 2px red'})
+        return false
+      }
+      else{
+        $('#inputLname4').css({'border':' solid 1px black'}) 
+        $('#p3').hide()
+      }
+      var passvalue=$('#inputPassword4')
+      if(passvalue.val()==""){
+        $('#p1').show()
+        $('#inputPassword4').css({'border':'solid 2px red'})
+        return false
+      }
+      else{
+        $('inputPassword4').css({'border':'solid 1px black'})
+        $('#p1').hide()
+      }
+      
+
+    })
+  })
+  
+  </script> -->
+ 
+    

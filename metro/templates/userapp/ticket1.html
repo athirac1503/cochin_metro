@@ -1,0 +1,155 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+<script src="{% static 'js/main.js' %}"></script>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+  <style>
+      .book{
+       color: black;
+       font-size: large;
+       padding-left: 20px;   
+       font-weight: bold;    
+     }
+     .book:hover{
+       color: black;
+       font-weight: bold;
+     }
+     .main{
+       background-color: rgba(196, 193, 193, 0.308);
+       width: 100px;
+       height: 555px;
+       padding-top: 40px;
+     }
+     .shadow{
+       background-color: rgba(255, 255, 255, 0.562);
+       width: 600px;
+       margin-left: 400px;
+       height: 500px;
+       margin-top: 20px;
+     }
+     h4{
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: bolder;
+       margin-top: 40px;
+       color: black;
+       text-align: center;
+     }
+     .btn{
+       width: 300px;
+       margin-left: 140px;
+       margin-top: 20px;
+       background-color: black;
+       color: #fff;
+       font-weight: bold;
+       border-radius: 10px;
+
+     }
+     .btn:hover{
+       color: black;
+       background-color: #fff;
+       border: solid 1px black;
+     }
+     .form-select{
+         width: 500px;
+         height: 100px;
+         margin-top: 40px;
+         margin-left: 50px;
+         background-color: rgba(255, 255, 255, 0.624);
+         padding-left: 60px;
+         font-weight: bold;
+         border: none;
+     }
+     .price{
+         background-color: rgba(255, 255, 255, 0.871);
+         width: 500px;
+         height: 340px;
+         margin-left: 50px;
+         padding-top: 20px;
+     }
+     h6{
+         text-align: center;
+     }
+    .box{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        padding-top: 6px;
+        padding-left: 2px;
+        background-color: rgb(155, 157, 157);
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+   .p1{
+        margin-left: 60px;
+    }
+    .p2{
+        margin-left: 40px;
+    }
+    .b1{
+        padding-left: 60px;
+        padding-top: 50px;
+    }
+    p{
+        font-size: 12px;
+        margin-left: 20px;
+    }
+    .p3{
+        margin-left: 100px;
+        color: red;
+    }
+     
+  
+
+    </style>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class=" shadow ">
+                <h4>BOOK QR TICKET</h4>                
+                    <div class="price shadow">
+                        <div>
+                            <h6>Single Journy Ticket</h6>
+                        </div><hr>
+                        <div class="row">
+                            <div class="col-md-4 icon">
+                                <h6><i class="bi bi-people-fill" ></i> &nbsp;1</h6>
+                                <div class="box">
+                                   <b>ALU</b>
+                                </div>
+                                <p id="st1" class="p1"></p>
+                                <p class="p2"><i class="bi bi-geo-alt-fill" ></i> &nbsp; 27 KM</p>
+                            </div>
+                            <div class="col-md-4 icon b1">
+                                <i class="bi bi-arrow-right" style="font-size: 2rem;"></i>
+                                
+                               </p> 
+                            </div>
+                            <div class="col-md-4 icon">
+                                <h6><i class="bi bi-currency-dollar"></i>$ 60.00/-</h6>
+                                <div class="box">
+                                    <b>EKP</b>
+                                </div>
+                                <p class="p1">Petta</p>
+                                <p class="p2"><i class="bi bi-alarm "></i>&nbsp; 00:49 hh</p>
+                            </div>
+
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <h6>Service Time</h6>
+                            <div class="col-md-6">
+                                <p>Journey Should commence in Max Journey Time</p>
+
+                            </div>
+                            <div class="col-md-6">
+                                <p class="p3">45 min of booking <br>120 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-light" href="{% url 'ticket2' %}">BOOK TICKET</a>
+                      <!-- <button class="btn btn-light" type="submit">BOOK TICKET</button> -->
+                  
+    
+            </div>
+        </div>
+  {% endblock %}

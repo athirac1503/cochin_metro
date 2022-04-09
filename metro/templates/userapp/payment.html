@@ -1,0 +1,72 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+
+    <style>
+      .shadow{
+          width: 500px;
+          height: 450px;
+          background-color: rgba(255, 255, 255, 0.891);
+          margin-left: 400px;
+          margin-top: 50px;
+          padding-top: 60px;
+      }
+      .form1{
+        width: 400px;
+       margin-top: 10px;
+       margin-left: 50px;
+       border-radius: 5px;
+       background-color: rgba(255, 251, 251, 0.83);
+       border: solid 1px rgb(181, 179, 179);
+      }
+     .mt-3{
+        border-radius: 5px;
+       background-color: rgba(255, 251, 251, 0.83);
+       border: solid 1px rgb(181, 179, 179); 
+     }
+      h1{
+          margin-left: 160px;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+      }
+      .btn{
+          margin-left: 50px;
+          margin-top: 40px;
+          background-color: green;
+          width: 400px;
+          color: black;
+          font-weight: bolder;
+      }
+     .btn:hover{
+      margin-left: 50px;
+          margin-top: 40px;
+          background-color: rgb(45, 199, 45);
+          width: 400px;
+          color: black;
+          font-weight: bolder;
+
+     }
+
+    </style>
+
+        <div class="shadow">
+            <form class="row g-3">
+                <h1>PAYMENT</h1>
+                <div class="col-12">
+                    <input type="text" class="form-control form1" id="inputAddress" placeholder="Card Number">
+                  </div>
+                  <div class="col-12">
+                    <input type="text" class="form-control form1" id="inputAddress2" placeholder="Card Holder Name">
+                  </div>
+               
+                <div class="col-sm-7">
+                    <input type="text" class="form-control ml-5 mt-3" style="width: 230px;" placeholder="Expire date" aria-label="City">
+                  </div>
+                  <div class="col-sm">
+                    <input type="text" class="form-control mt-3 " style="width: 140px;" placeholder="CVV" aria-label="State">
+                  </div>
+             </form>
+
+              <a class="btn btn-light " href="{% url 'otp' %}">Pay Now</a>
+        </div>
+  {% endblock %}

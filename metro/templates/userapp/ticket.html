@@ -1,0 +1,163 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+<style>
+
+
+      .m1{
+         
+         width: 100%;
+         height: 600px;
+         padding-top: 50px;
+         padding-left: 450px;
+
+     }
+     .m2{
+         width: 450px;
+         height: 500px;
+         margin-top: 20px;
+         padding-top: 20px;
+         /* border: solid 1px rgb(0, 0, 0); */
+         /* border-radius: 50px; */
+         background-color: rgba(237, 237, 237, 0.789);  
+         text-align: center; 
+     }
+    
+     .form-select{
+      width: 400px;
+       margin-top: 50px;
+       margin-left: 100px;
+       border-radius: 5px;
+       background-color: rgba(255, 251, 251, 0.83);
+       border: solid 1px rgb(181, 179, 179);
+       /* border: none; */
+
+     }
+     h4{
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: bolder;
+       margin-top: 40px;
+       color: black;
+       text-align: center;
+     }
+     .btn{
+       width: 300px;
+       margin-left: 140px;
+       margin-top: 30px;
+       background-color: black;
+       color: #fff;
+       font-weight: bold;
+       border-radius: 10px;
+
+     }
+     .btn:hover{
+       color: black;
+       background-color: #fff;
+       border: solid 1px black;
+     }
+     .main{
+       background-color: rgba(196, 193, 193, 0.308);
+       width: 100px;
+       height: 555px;
+       padding-top: 40px;
+     }
+     .book{
+       color: black;
+       font-size: large;
+       padding-left: 20px;   
+       font-weight: bold;    
+     }
+     .book:hover{
+       color: black;
+       font-weight: bold;
+       
+     }
+     .shadow{
+       background-color: rgba(255, 255, 255, 0.562);
+       width: 600px;
+       margin-left: 400px;
+       height: 500px;
+       margin-top: 40px;
+     
+      
+     }
+    
+      
+    </style>
+       <div class="container-fluid">
+         <div class="row">
+           <div class=" shadow ">
+            <h4>BOOK QR TICKET</h4>
+            <form class="row g-3 fome1">
+              <select id="inputState" class="form-select  ">
+                <option selected>Ticket type</option>
+                <option>SJT</option>
+
+              </select>
+              
+                <select id="inputState1" class="form-select ">
+                    <option selected>Travel From</option>
+                    <option>Aluva</option>
+                    <option>Pulinchod</option>
+                    <option>Companypady</option>
+                    <option>Ambattukavu</option>
+                    <option>Muttom</option>
+                    <option>Kalamassery</option>
+                    <option>Cochin University</option>
+                    <option >Pathadipalam</option>
+                    <option >Edappally</option>
+                    <option >Changampuzha Park</option>
+                    <option >Palarivatom</option>
+                    <option >JLN stadium</option>
+                    <option >Kaloor</option>
+                    <option >Town Hall</option>
+                    <option >M G Road</option>
+                    <option >Maharaja's college</option>
+                    <option >Eranakulam South</option>
+                    <option >Kadavanthra</option>
+                    <option >Elamkulam</option>
+                    <option >Vytila</option>
+                    <option >Thykkoodam</option>
+                    <option >Petta</option>
+                  </select>
+                  <select id="inputState2" class="form-select ">
+                    <option selected>Travel To</option>
+                    <option>Aluva</option>
+                    <option>Pulinchod</option>
+                    <option>Companypady</option>
+                    <option>Ambattukavu</option>
+                    <option>Muttom</option>
+                    <option>Kalamassery</option>
+                    <option>Cochin University</option>
+                    <option >Pathadipalam</option>
+                    <option >Edappally</option>
+                    <option >Changampuzha Park</option>
+                    <option >Palarivatom</option>
+                    <option >JLN stadium</option>
+                    <option >Kaloor</option>
+                    <option >Town Hall</option>
+                    <option >M G Road</option>
+                    <option >Maharaja's college</option>
+                    <option >Eranakulam South</option>
+                    <option >Kadavanthra</option>
+                    <option >Elamkulam</option>
+                    <option >Vytila</option>
+                    <option >Thykkoodam</option>
+                    <option >Petta</option>
+                  </select>
+                  <input type="number" class="form-select " placeholder="Number of Passenger">
+                 
+                  <a id="submit" class="btn btn-light" href="{% url 'ticket1' %}">SUBMIT</a>
+                  <!-- <button class="btn btn-light" type="submit">SUBMIT</button> -->
+              
+              </form>
+
+           </div>
+         </div>
+       </div>
+
+
+      </div>
+          
+   
+{% endblock %}

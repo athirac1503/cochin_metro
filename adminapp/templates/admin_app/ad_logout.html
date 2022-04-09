@@ -1,0 +1,18 @@
+{% extends 'admin_app/admin_master.html' %}
+{% load static %}
+{% block admin_profile %}
+<link rel="stylesheet" href="{% static 'css/log.css' %}">
+
+<h1>LOG OUT</h1>
+<div >
+  <img class="img1" src="{% static 'images/log.png' %}" alt="" width="150px">
+ <center>
+  <h4>
+      Oh no! You're  leaving...... <br>Are you sure?
+  </h4>
+  <a class="btn btn-light" href="">Yes</a><br>
+  <a class="btn btn-light" href="">No</a>
+ </center>
+</div>
+
+  {% endblock %}

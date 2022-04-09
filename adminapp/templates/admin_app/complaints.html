@@ -1,0 +1,39 @@
+{% extends 'admin_app/admin_master.html' %}
+{% load static %}
+{% block admin_profile %}
+<link rel="stylesheet" href="{% static 'css/complaints.css' %}">
+
+
+<h1>MESSAGES</h1>
+<table class="table shadow">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Email</th>
+        <th scope="col">Massage</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>athitac1503@gmail.com</td>
+        <td>My phone is missing from aluva station on 19/03/2022 phone model:redmiA</td>
+        <td><a class="btn btn-dark" href="{% url 'reply' %}">view</a></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>anu1567@gmail.com</td>
+        <td>Miss behave from passanger</td>
+        <td><a class="btn btn-dark" href="{% url 'reply' %}">view</a></td>
+      </tr>
+      <tr> <th scope="row">1</th>
+        <td>athitac1503@gmail.com</td>
+        <td>My phone is missing from aluva station on 19/03/2022 phone model:redmiA</td>
+        <td><a class="btn btn-dark" href="{% url 'reply' %}">view</a></td>
+      </tr>
+    
+    </tbody>
+  </table>
+
+{% endblock %}
