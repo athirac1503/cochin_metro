@@ -10,7 +10,10 @@ urlpatterns=[
         path('ad_logout',views.ad_logout,name='ad_logout'),
         path('ad_station',views.ad_station,name='ad_station'),
         path('aprofile',views.aprofile,name='aprofile'),
-        path('reply',views.reply,name='reply')
+        path('reply',views.reply,name='reply'),
+        path('hello',views.hello,name='hello'),
+        path('welcome',views.welcome,name='welcome')
+
 
 
 ]

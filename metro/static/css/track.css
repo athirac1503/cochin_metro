@@ -38,3 +38,8 @@ h3{
     font-weight: bolder;
     border: solid 2px black;
 }
+.box    {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+}

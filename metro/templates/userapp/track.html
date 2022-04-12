@@ -2,6 +2,25 @@
 {% load static %}
 {% block user_content %}
 <link rel="stylesheet" href="{% static 'css/track.css' %}">
+<style>
+  .box{
+    background-color: #fff;
+    width: 1000px;
+    height: 400px;
+    margin-left: 170px;
+    margin-top: 40px;
+    border-radius: 10px;
+    display: none;
+    
+  }
+  h2{
+    padding-top: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+
+  }
+</style>
 
 
 <div class="shadow main">
@@ -57,10 +76,23 @@
         <option >Thykkoodam</option>
         <option >Petta</option>
       </select>
-      <a href="" class="btn btn-light">Check status</a>
+      <a href="" id="check" class="btn btn-light">Check status</a>
+      <h1 style="display: none;">hello</h1>
 
 
 </div>
+<div class="shadow box" id="b1">
+  <h2>Available metro</h2>
+</div>
+<script>
+  $(document).ready(function(){
+    $('#check').click(function(){
+        $('h1').show()
+        
+
+    })
+  })
+</script>
 
 
     
