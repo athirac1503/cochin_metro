@@ -2,6 +2,32 @@
 {% load static %}
 {% block admin_profile %}
 <link rel="stylesheet" href="{% static 'css/log.css' %}">
+<style>
+  h1{
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;   
+    padding-top: 40px   ; 
+}
+.img1{
+    margin-left: 370px;
+    margin-top: 20px;
+}
+.btn{
+    color: #fff;
+    background-color: black;
+    margin-top: 40px;
+    width: 300px;
+}
+.btn:hover{
+    color: black;
+    background-color: #fff;
+    border: solid 2px black;
+}
+h4{
+    margin-top: 20px;
+}
+</style>
 
 <h1>LOG OUT</h1>
 <div >
@@ -10,7 +36,7 @@
   <h4>
       Oh no! You're  leaving...... <br>Are you sure?
   </h4>
-  <a class="btn btn-light" href="">Yes</a><br>
+  <a class="btn btn-light" href="{% url 'admin_login' %}">Yes</a><br>
   <a class="btn btn-light" href="">No</a>
  </center>
 </div>

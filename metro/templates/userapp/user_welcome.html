@@ -1,0 +1,22 @@
+{% extends 'userapp/master1.html' %}
+{% load static %}
+{% block user_profile %}
+<style>
+h1{
+    padding-top: 170px;
+    margin-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    font-weight: bolder;
+
+}
+
+</style>
+
+    
+   <div>
+       <h1>Welcome {{wel.fname|capfirst}}.....  </h1>
+       
+   </div>
+
+{% endblock %}

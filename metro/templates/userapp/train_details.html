@@ -1,0 +1,279 @@
+{% extends 'userapp/master.html' %}
+{% load static %}
+{% block user_content %}
+    <style>
+       
+        .box{
+            margin-top: 40px;
+            width: 1000px;
+            height: 6   00px;
+            margin-left: 180px;
+            background-color: rgb(250, 250, 250);
+        }
+        h5{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        h4{
+            /* margin-left: 200px; */
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif
+        }
+        .h1{
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bolder;
+        }
+        td{
+            font-weight: bold;
+        }
+        h4{
+            text-align: center;
+            background-color: rgb(206, 202, 202);
+        }
+  
+    </style>
+
+    <div class=" container-fluid body">
+        <h1 class="h1">TRAIN DETAILS</h1>
+          <div class="box1">
+            <div class="box shadow-lg p-3 mb-5 bg-body rounded">
+                <h1>The Specifications</h1>
+                <table class="table table-bordered table-secondary ">
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Design Speed</td>
+                        <td>90 km per hour</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Average Speed</td>
+                        <td>35 km per hour</td>
+                      </tr>
+                      <tr> <th scope="row">3</th>
+                        <td>Train Length</td>
+                        <td>66.55 metres(3 coches)</td>
+                      </tr>
+                      <tr> <th scope="row">4</th>
+                        <td>Estimated completion Cost</td>
+                        <td>Rs 5181.79 Crore</td>
+                      </tr>
+                      <tr> <th scope="row">5</th>
+                        <td>Fare Collection</td>
+                        <td>Automated fair collection system with combination of smart card & RFID/QR Code tickets</td>
+                      </tr>
+                      <tr> <th scope="row">6</th>
+                        <td>Capacity/Train</td>
+                        <td>975 passengers(Crush Load)(seating-134)</td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                  <h1>Phases</h1>
+                  <table class="table table-bordered table-secondary ">
+                    
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Phase I</td>
+                        <td>Aluva to Petta</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Phase IA</td>
+                        <td>Petta to SNL Junction</td>
+                      </tr>
+                      <tr> <th scope="row">3</th>
+                        <td>Phase IB</td>
+                        <td>SN junction to thripunithura Terminal</td>
+                      </tr>
+                      <tr> <th scope="row">4</th>
+                        <td>Phses II</td>
+                        <td>JNL stadium to infopark</td>
+                      </tr>
+                      <tr> <th scope="row">5</th>
+                        <td>phase III</td>
+                        <td>Aluva to Angamaly </td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <br>
+                  <table class="table table-bordered table-secondary ">
+                    <tbody>
+                      <tr>
+                        <td>Total number of Train</td>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <td>Present Reach</td>
+                        <td>Aluva to Petta(22 Stations)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h1>Metro Train Names</h1>
+                  <table class="table  table-secondary table-bordered">
+                    <tbody>
+                      <tr>
+                        <tr> <th scope="row">1</th>
+                        <td>KRISHNA</td>
+                        <!-- <td>കൃഷ്ണ</td> -->
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">2</th>
+                        <td>TAPTI</td>
+                        <!-- <td>തപ്തി</td> -->
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">3</th>
+                        <td>NILA</td>
+                        <!-- <td>നിള</td> -->
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">4</th>
+                        <td>SARAYU</td>
+                        <!-- <td>സരയു</td> -->
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">5</th>
+                        <td>ARUTH</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">6</th>
+                        <td>VAIGAI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">7</th>
+                        <td>JHANAVI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">8</th>
+                        <td>DHWANIL</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">9</th>
+                        <td>BHAVANI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">10</th>
+                        <td>PADMA</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">11</th>
+                        <td>MANDAKINI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">12</th>
+                        <td>YAMUNA</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">13</th>
+                        <td>PERIYAR</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">14</th>
+                        <td>KABANI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">15</th>
+                        <td>VAAYU</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">16</th>
+                        <td>KAVERI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">17</th>
+                        <td>SHIRIYA</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">18</th>
+                        <td>PAMPA</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">19</th>
+                        <td>NARMADA</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">20</th>
+                        <td>MAHE</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">21</th>
+                        <td>MAARUT</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">22</th>
+                        <td>SABARMATHI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">23</th>
+                        <td>GODHAVARI</td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">24</th>
+                        <td>GANGA</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <tr> <th scope="row">25</th>
+                        <td>PAVAN</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+          </div>
+          <h1 class="h1">METRO TRAIN TIME TABLE</h1>
+          <div class="box1">
+            <div class="box shadow-lg p-3 mb-5 bg-body rounded">
+                <h4>Headway for Monday to Saturday w.e.f 03-Mar-2022</h4>
+                <table class="table table-bordered table-secondary ">
+                    <tbody>
+                      <tr>
+                        <td >Alua - Petta</td>
+                        <td>06:00 to 22:30</td><td>21 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Petta - Aluva</td>
+                        <td>06:00 to 22:30</td><td>21 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Pathadipalam - Petta</td>
+                        <td>08:30 to 20:15</td><td>07 minutes</td>
+                      </tr>
+                      <tr>
+                        <td>Petta - Pathadipalam</td>
+                        <td>08:30 to 20:15</td><td>07 minutes</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h4>Headway for Sunday w.e.f 03-Mar-2022</h4>
+                  <table class="table table-bordered table-secondary ">
+                      <tbody>
+                        <tr>
+                          <td >Alua - Petta</td>
+                          <td>08:00 to 22:30</td><td>21 minutes</td>
+                        </tr>
+                        <tr>
+                          <td>Petta - Aluva</td>
+                          <td>08:00 to 22:30</td><td>21 minutes</td>
+                        </tr>
+                        <tr>
+                          <td>Pathadipalam - Petta</td>
+                          <td>11:00 to 19:45</td><td>07 minutes</td>
+                        </tr>
+                        <tr>
+                          <td>Petta - Pathadipalam</td>
+                          <td>11:00 to 20:15</td><td>07 minutes</td>
+                        </tr>
+                      </tbody>
+                    </table>
+            </div>    
+          </div>
+    </div>
+{% endblock %}

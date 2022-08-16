@@ -88,14 +88,15 @@
          <div class="row">
            <div class=" shadow ">
             <h4>BOOK QR TICKET</h4>
-            <form class="row g-3 fome1">
-              <select id="inputState" class="form-select  ">
+            <form class="row g-3 fome1" method="POST">
+              {% csrf_token %}
+              <select id="inputState" name="type" class="form-select  ">
                 <option selected>Ticket type</option>
                 <option>SJT</option>
 
               </select>
               
-                <select id="inputState1" class="form-select ">
+                <select id="inputState1" name="from" class="form-select ">
                     <option selected>Travel From</option>
                     <option>Aluva</option>
                     <option>Pulinchod</option>
@@ -120,7 +121,7 @@
                     <option >Thykkoodam</option>
                     <option >Petta</option>
                   </select>
-                  <select id="inputState2" class="form-select ">
+                  <select id="inputState2" name="to" class="form-select ">
                     <option selected>Travel To</option>
                     <option>Aluva</option>
                     <option>Pulinchod</option>
@@ -145,10 +146,8 @@
                     <option >Thykkoodam</option>
                     <option >Petta</option>
                   </select>
-                  <input type="number" class="form-select " placeholder="Number of Passenger">
-                 
-                  <a id="submit" class="btn btn-light" href="{% url 'ticket1' %}">SUBMIT</a>
-                  <!-- <button class="btn btn-light" type="submit">SUBMIT</button> -->
+                  <input type="number" name="passenger" class="form-select " placeholder="Number of Passenger">
+                  <button  id="submit"class="btn btn-light" type="submit">SUBMIT</button>
               
               </form>
 

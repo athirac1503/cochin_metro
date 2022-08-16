@@ -41,27 +41,15 @@ h1{
           </tr>
         </thead>
         <tbody>
+          {% for p in payment %}
           <tr>
-            <th scope="row">1</th>
-            <td>2/03/2022</td>
-            <td>9.00</td>
-            <td>Aluva to Petta</td>
-            <td>20</td>
+            <th scope="row">{{forloop.counter}}</th>
+            <td>{{p.date}}</td>
+            <td>{{p.time}}</td>
+            <td>{{p.ticket_from}} to {{p.ticket_to}}</td>
+            <td></td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>2/03/2022</td>
-            <td>9.00</td>
-            <td>Aluva to Muttom</td>
-            <td>80</td>
-          </tr>
-          <tr> <th scope="row">3</th>
-            
-            <td>2/03/2022</td>
-            <td>9.00</td>
-            <td>Town Hall to vytila</td>
-            <td>10</td>
-          </tr>
+          {% endfor %}
         
         </tbody>
       </table>

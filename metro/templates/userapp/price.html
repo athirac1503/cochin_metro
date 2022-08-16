@@ -6,6 +6,7 @@
             margin-top: 40px;
             width: 1000px;
             margin-left: 180px;
+            background-color: #fff;
         }
         h5{
             font-family: 'Times New Roman', Times, serif;
@@ -40,37 +41,13 @@
                       </tr>
                     </thead>
                     <tbody>
+                      {% for f in fair %}
                       <tr>
-                        <td>F1</td>
-                        <td>2 km</td>
-                        <td>Rs. 10</td>
+                        <td>{{f.zone|capfirst}}</td>
+                        <td>{{f.distance}}</td>
+                        <td>{{f.fair|capfirst}}</td>
                       </tr>
-                      <tr>
-                        <td>F2</td>
-                        <td>5 km</td>
-                        <td>Rs. 20</td>
-                      </tr>
-                      <tr>
-                        <td>F3</td>
-                        <td>10 km</td>
-                        <td>Rs. 30</td>
-                      </tr>
-                      <tr>
-                        <td>F4</td>
-                        <td>15 km</td>
-                        <td>Rs. 40</td>
-                      </tr>
-                      <tr>
-                        <td>F5</td>
-                        <td>20 km</td>
-                        <td>Rs. 50</td>
-                      </tr>
-                      <tr>
-                        <td>F6</td>
-                        <td>25 km</td>
-                        <td>Rs. 60</td>
-                      </tr>
-                     
+                      {% endfor %}
                     </tbody>
                   </table>
                   <h4>Kochi Metro Fare Chart</h4>

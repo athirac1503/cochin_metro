@@ -2,24 +2,63 @@
 {% load static %}
 {% block user_content %}
 <link rel="stylesheet" href="{% static 'css/track.css' %}">
-<style>
-  .box{
-    background-color: #fff;
-    width: 1000px;
-    height: 400px;
-    margin-left: 170px;
-    margin-top: 40px;
-    border-radius: 10px;
-    display: none;
-    
-  }
-  h2{
-    padding-top: 40px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-align: center;
 
-  }
+
+<style>
+.main{
+    width: 600px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.757) ;
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+h3{
+    margin-left: 20px;
+    padding-top: 30px;
+}
+.form-select{
+    width: 500px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border: solid 2px rgba(0, 0, 0, 0.55);
+}
+#bi{
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 5px;
+    color: black;
+    margin-left: 250px;
+    padding-top: 20px;
+}
+.btn{
+    width: 500px;
+    margin-top: 60px;
+    margin-left: 40px;
+    background-color: black;
+    color: #fff;
+    font-weight: bolder;
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+    font-weight: bolder;
+    border: solid 2px black;
+}
+.box    {
+    width: 1000px;
+    height: 500px;
+    margin-left: 160px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    font-weight: bolder;
+    display: none;
+
+}
+h2{
+  font-weight: bold;
+}
 </style>
 
 
@@ -50,7 +89,7 @@
         <option >Thykkoodam</option>
         <option >Petta</option>
       </select>
-        <i class="bi bi-arrow-down-up"></i>
+        <i id="bi" class="bi bi-arrow-down-up"></i>
     <select id="inputState1" class="form-select ">
         <option selected>To</option>
         <option>Aluva</option>
@@ -76,8 +115,7 @@
         <option >Thykkoodam</option>
         <option >Petta</option>
       </select>
-      <a href="" id="check" class="btn btn-light">Check status</a>
-      <h1 style="display: none;">hello</h1>
+      <a href="#" id="check" class="btn btn-light">Check status</a>
 
 
 </div>
@@ -87,7 +125,7 @@
 <script>
   $(document).ready(function(){
     $('#check').click(function(){
-        $('h1').show()
+        $('#b1').show()
         
 
     })

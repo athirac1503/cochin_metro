@@ -15,12 +15,12 @@ h5 p{
 .form-control{
     width: 400px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 .f1{
     width: 865px;
 }
 .radio1{
-    /* margin-left:10px; */
     padding-left: 20px;
 }
 .btn{
@@ -43,24 +43,20 @@ h5 p{
     
     <i class="bi bi-person-circle ml-5" style="font-size: 3rem;"></i>
     <h1 >Profile</h1><hr>
-    <h5 class="ml-5">Athira c</h5>
-    <p class="ml-5">athirac1503@gmail.com</p>
+    <h5 class="ml-5">{{prof.fname|upper}}</h5>
+    <p class="ml-5">{{prof.email}}</p>
     <form class="row g-3">
         <div class="col-md-6">
-          <input type="text" class="form-control" id="inputFname4" placeholder="First Name">
-          <!-- <p id="p2">*Please fill</p> -->
+          <input type="text" class="form-control" id="inputFname4" placeholder="{{prof.fname|capfirst}}">
         </div>
         <div class="col-md-6">
-          <input type="text" class="form-control" id="inputLname4" placeholder="Last Name">
-          <!-- <p id="p3">*Please fill</p> -->
+          <input type="text" class="form-control" id="inputLname4" placeholder="{{prof.lname|capfirst}}">
         </div>
         <div class="col-12">
-          <input type="email" class="form-control f1" id="inputEmail4" placeholder="Email">
-          <!-- <p id="p4">*Enter your Email address</p> -->
+          <input type="email" class="form-control f1" id="inputEmail4" placeholder="{{prof.email}}">
         </div>
         <div class="col-6">
           <input type="date" class="form-control" id="inputEmail4" placeholder="Date of birth">
-          <!-- <p id="p4">*Enter your Email address</p> -->
         </div>
         <div class="dropdown col-6 radio1">
           <label for="">Gender: </label>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -71,8 +67,7 @@ h5 p{
         </div>
        
         <div class="col-12">
-          <input type="password" class="form-control f1" id="inputPassword4" placeholder="Address">
-          <!-- <p id="p1">*Enter your Password</p> -->
+          <input type="password" class="form-control f1" id="inputPassword4" placeholder="Address">   
         </div>     
         <div class="col-12">
           <a  class="btn btn-light" id="sign" href="">Save </a>

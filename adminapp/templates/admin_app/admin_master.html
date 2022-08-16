@@ -58,11 +58,12 @@
 
         #menu .items li:hover{
         background: rgb(27, 26, 26);
+        width: 330px;
     }
     .box1{
         background-color: rgba(0, 0, 0, 0.816);
         width: 400px;
-        height: 100%;
+        height: 940px;
     }
     #menu .logo{
         display: flex;
@@ -90,7 +91,7 @@
     .main{
     background-color: rgba(255, 255, 255, 0.829);
     width: 900px;
-    height: 600px;
+    height: 860px;
     border-radius: 20px;
     margin-top: 50px;
     margin-left: 40px;
@@ -102,52 +103,18 @@
 </head>
 <body>
     <div class="body">
-        <nav class="navbar navbar-expand-lg navbar-light nav1 ">
-            <div class="col-md-4">
-              <img  src="{% static 'images/metro1.png' %}" width="60px" width="60px" alt="">
-             </div>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="a1"  aria-current="page" href="{% url 'index' %}">Home</a>
-                    </li>
-                  </ul>
-              </div>
-              
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="a1"  aria-current="page" href="{% url 'about' %}">About</a>
-                    </li>
-                  </ul>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a  class="a1" aria-current="page" href="{% url 'contact' %}">Contact</a>
-                    </li>
-                  </ul>
-              </div>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a  aria-current="page" href="{% url 'aprofile' %}"><i class="bi bi-person-circle" style="color: #fff; font-size: 2rem; "></i></a>
-                  </li>
-                </ul>
-            </div>
-          </nav>
           <div class="row">
               <div class="col-md-3 box1">
                 <section id="menu">
                     <div class="logo">
-                       <h2>Cochin Metro</h2><hr>
+                       <h2>COCHIN METRO</h2><hr>
                     </div>
                     <div class="items">
-                       <li class="l1"><a href="{% url 'ad_station' %}">Add station</a></li>
-                       <!-- <li class="l1"><a href="{% url 'rout' %}">Add rout</a></li> -->
+                       <li class="l1"><a href="{% url 'add_station_details' %}">Add Station & Station details</a></li>
                        <li class="l1"><a href="{% url 'train' %}">Add Train</a></li>
-                       <li class="l1"><a href="{% url 'fair' %}">Fair details</a></li>
-                       <li class="l1"><a href="{% url 'complaints' %}">Massage </a></li>
+                       <li class="l1"><a href="{% url 'add_fair' %}">Add fair details</a></li>
+                       <li class="l1"><a href="{% url 'update_fair' %}">Update fair details</a></li>
+                       <li class="l1"><a href="{% url 'complaints' %}">Message </a></li>
                        <li class="l1"><a href="{% url 'ad_logout' %}">log out</a></li>
 
                     </div>

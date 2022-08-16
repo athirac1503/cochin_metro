@@ -67,7 +67,11 @@
          padding-top: 20px;
      }
      h6{
-         text-align: center;
+        text-align: center;
+     }
+     #h6{
+         /* text-align: center; */
+         margin-left: 200px;
      }
     .box{
         width: 35px;
@@ -110,46 +114,37 @@
                         <div>
                             <h6>Single Journy Ticket</h6>
                         </div><hr>
+                       <form action="" method="POST">
+                        {% csrf_token %}
                         <div class="row">
                             <div class="col-md-4 icon">
                                 <h6><i class="bi bi-people-fill" ></i> &nbsp;1</h6>
-                                <div class="box">
-                                   <b>ALU</b>
-                                </div>
-                                <p id="st1" class="p1"></p>
+                                <p id="st1" class="p1">{{ticket.ticket_from}}</p>
                                 <p class="p2"><i class="bi bi-geo-alt-fill" ></i> &nbsp; 27 KM</p>
                             </div>
                             <div class="col-md-4 icon b1">
-                                <i class="bi bi-arrow-right" style="font-size: 2rem;"></i>
-                                
+                                <i class="bi bi-arrow-right" style="font-size: 2rem;"></i>  
                                </p> 
                             </div>
                             <div class="col-md-4 icon">
                                 <h6><i class="bi bi-currency-dollar"></i>$ 60.00/-</h6>
-                                <div class="box">
-                                    <b>EKP</b>
-                                </div>
-                                <p class="p1">Petta</p>
+                                <p class="p1">{{ticket.ticket_to|capfirst}}</p>
                                 <p class="p2"><i class="bi bi-alarm "></i>&nbsp; 00:49 hh</p>
                             </div>
-
                         </div>
+                       </form>
                         <hr>
                         <div class="row">
-                            <h6>Service Time</h6>
+                            <h6 id="h6">Service Time</h6>
                             <div class="col-md-6">
                                 <p>Journey Should commence in Max Journey Time</p>
-
                             </div>
                             <div class="col-md-6">
                                 <p class="p3">45 min of booking <br>120 min</p>
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-light" href="{% url 'ticket2' %}">BOOK TICKET</a>
-                      <!-- <button class="btn btn-light" type="submit">BOOK TICKET</button> -->
-                  
-    
+                    <a class="btn btn-light" href="{% url 'ticket2' %}">BOOK TICKET</a>                  
             </div>
         </div>
   {% endblock %}

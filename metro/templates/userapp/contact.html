@@ -75,7 +75,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="text">
-                                    <h5>Address <span>Chencharodi(H) Ariyallur(PO) <br> Vallikkunnu,Malappuram</span></h5>
+                                    <h5>Address <br><span>JNL Metro Station,4th Floor <br> Kaloor Ernakulam - 682017</span></h5>
                                     <p></p>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="text ">
-                                    <h5>Phone <br><span>8606907669</span></h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <h5>Phone <br><span>0484-2846700 <br>0484-2846770 <br></span></h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
                             </div>
                             <div class="col-md-4 icon1">
@@ -94,7 +94,7 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="text ">
-                                    <h5>Email <span>athirac1503@gmail.com</span></h5>
+                                    <h5>Email <br> <span>contact(at)kmrl(dot)co(dot)in</span></h5>
                                     <p></p>
                                 </div>
                             </div>
@@ -102,18 +102,21 @@
                     </div>
                     <div class="col-md-6 box1">
                         <h2>Send Message</h2>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Fulll Name</label>
-                          </div>
-                          <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Email ID</label><br>
-                          </div><div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Type Your Massage</label><br>
-                          </div>
-                          <button class="btn btn-light">Send</button>
+                        <form action="" method="POST"onsubmit="return validate()">
+                            {% csrf_token %}
+                            <div class="form-floating mb-3">
+                                <input type="text" name="fname" class="form-control" id="fname" placeholder="full name">
+                                <label for="floatingInput">Fulll Name</label>
+                              </div>
+                              <div class="form-floating">
+                                <input type="email" name="e_mail" class="form-control" id="email" placeholder="email">
+                                <label for="floatingPassword">Email ID</label><br>
+                              </div><div class="form-floating">
+                                <textarea name="msg" class="form-control" placeholder="Leave a comment here" id="comment" style="height: 100px"></textarea>
+                                <label for="floatingTextarea2">Type Your Massage</label><br>
+                              </div>
+                              <button type="submit" class="btn btn-light">Send</button>
+                        </form>
 
                          
                     </div>
@@ -124,4 +127,52 @@
          
 
     </div>
+    <script>
+           function validate(){
+            var status=1
+            var txt_fname=document.getElementById("fname")
+            var txt_email=document.getElementById("email")
+            var txt_cmt=document.getElementById("comment")
+            var email_pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"           
+
+
+      if(txt_fname.value=="")
+      {
+          txt_fname.style.borderColor = "red"
+          status=0
+      }
+      else{
+          document.getElementById("s_fname").innerHTML=""
+          txt_fname.style.borderColor = ""
+          status=1
+      }
+      if(txt_email.value=="")
+      {
+          txt_email.style.borderColor = "red"
+          status=0
+
+      }else if (txt_email.value.match(email_pattern)){
+          txt_email.style.borderColor = ""
+          status=1
+      }
+      else{
+          txt_email.style.borderColor = "red"
+          status=0
+
+      }
+      if(txt_cmt.value=="")
+      {
+          txt_cmt.style.borderColor = "red"
+          status=0
+      }
+      else{
+          txt_cmt.style.borderColor = ""
+          status=1
+      }
+
+
+
+           }
+
+    </script>
 {% endblock %}

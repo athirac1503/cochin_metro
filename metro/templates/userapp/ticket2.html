@@ -1,6 +1,7 @@
 {% extends 'userapp/master.html' %}
 {% load static %}
 {% block user_content %}
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
   
     <style>
   
@@ -58,11 +59,10 @@
 <body>
         <div class="container-fluid">
           <div class="row shadow">
-
                 <div class="col-md-6 m1">
-                  <h4>Aluva</h4>
+                  <h4>{{ticket.ticket_from}}</h4>
                   <i class="bi bi-arrow-down" style="font-size: 2rem;"></i>
-                  <h4>Petta</h4>
+                  <h4>{{ticket.ticket_to}}</h4>
                 </div>
                 <div class="col-md-6 m2">
                   <hr>
@@ -71,10 +71,58 @@
                 </div>
                 
             </div>
-            
-            <a class="btn btn-link" href="{% url 'payment' %}">Make Payment</a>
+            <button id="razorpay" class="btn btn-link" onclick="pay()"> Make Payment</button>
+         
 
            
 
         </div>
+        <script>
+          function pay(){
+            var options={
+              'key':'rzp_test_DXRg3g1c39DElY',
+              'amount':1000 *100,
+              'currency':'INR',
+              'order_id':'{{payment.id}}',
+              'name':'metro',
+              'description':'booking ticket',
+              'image':'https://upload.wikimedia.org/wikipedia/commons/b/ba/Kochi_Metro_train_at_Palarivattom%2C_Aug_2017.jpg',
+              'handler':function(response){
+                alert('Paymeny succesfull')
+               
+              },
+
+              "prefill": {
+                                    "name": "Athira c",
+                                    "email": "athirac1503@gmail.com",
+                                    "contact": "8606907669"
+                                },
+                                "notes": {
+                                    "address": "Razorpay Corporate Office"
+                                },
+                                "theme": {
+                                    "color": "#3399cc"
+                                }
+                            };
+                            var rzp1 = new Razorpay(options);
+                            rzp1.on('payment.failed', function (response){
+                                    alert("Payment Cancelled");
+                                  //   alert(response.error.description);
+                                  //   alert(response.error.source);
+                                  //   alert(response.error.step);
+                                  //   alert(response.error.reason);
+                                  //   alert(response.error.metadata.order_id);
+                                  //   alert(response.error.metadata.payment_id);
+                            });
+                            document.getElementById('razorpay').onclick = function(e){
+                                rzp1.open();
+                                e.preventDefault();
+                            }
+
+
+
+
+            }
+          
+        </script>
 {% endblock %}

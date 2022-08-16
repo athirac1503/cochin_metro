@@ -33,7 +33,7 @@ h1{
         <thead>
           <tr>
             <th scope="col">ID</th>
-            <th scope="col">From </th>
+            <th scope="col">Date</th>
             <th scope="col">Time</th>
             <th scope="col">From</th>
             <th scope="col">To</th>
@@ -41,28 +41,15 @@ h1{
           </tr>
         </thead>
         <tbody>
+          {% for t in travel %}
           <tr>
-            <th scope="row">1</th>
-            <td>2/03/2022</td>
-            <td>9.00</td>
-            <td>aluva</td>
-            <td>petta</td>
+            <th scope="row">{{forloop.counter}}</th>
+            <td>{{t.date}}</td>
+            <td>{{t.time}}</td>
+            <td>{{ t.ticket_from}}</td>
+            <td>{{t.ticket_to}}</td>
           </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>2/03/2022</td>
-            <td>9.00</td>
-            <td>aluva</td>
-            <td>petta</td>
-          </tr>
-          <tr> <th scope="row">3`</th>
-            
-            <td>2/03/2022</td>
-            <td>9.00</td>
-            <td>aluva</td>
-            <td>petta</td>
-          </tr>
-        
+          {% endfor %}
         </tbody>
       </table>
    </div>

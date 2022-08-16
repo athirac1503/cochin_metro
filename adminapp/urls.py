@@ -2,15 +2,16 @@ from django.urls import path
 from. import views
 
 urlpatterns=[
-        # path('admin_master',views.fair,name='fair'),
+        path('admin_login',views.admin_login,name='admin_login'),
         path('fair',views.fair,name='fair'),
-        path('rout',views.rout,name='rout'),
+        path('add_fair',views.add_fair,name='add_fair'),
+        path('update_fair',views.update_fair,name='update_fair'),
         path('complaints',views.complaints,name='complaints'),
         path('train',views.train,name='train'),
         path('ad_logout',views.ad_logout,name='ad_logout'),
-        path('ad_station',views.ad_station,name='ad_station'),
+        path('add_station_details',views.add_station_details,name='add_station_details'),
         path('aprofile',views.aprofile,name='aprofile'),
-        path('reply',views.reply,name='reply'),
+        path('reply/<int:id>',views.reply,name='reply'),
         path('hello',views.hello,name='hello'),
         path('welcome',views.welcome,name='welcome')
 

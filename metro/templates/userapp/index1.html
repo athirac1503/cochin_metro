@@ -4,7 +4,7 @@
     <style>
      .btn{
          margin-top: 20px;
-         margin-left: 100px;
+         margin-left: 200px;
          background-color: black;
          color: #fff;
          font-weight: bold;
@@ -19,40 +19,25 @@
      }
      .shadow{
        background-color: rgba(255, 255, 255, 0.638);
+       margin-left: 200px;
      }
      #img1{
-       margin-left: 200px;
+       margin-left: 300px;
        width:410px;
      }
-     #img2{
-       width: 500px;
-       margin-left: 50px;
-     }
+
   
 
     </style>
           <div class="row mt-5">
-            <div class="col-sm-6">
+            <div class="col-sm-10">
               <div class="card shadow">
                 <div class="card-body">
                   <img src="{% static 'images/book1.png' %}" id="img1" alt="" >
-                  <!-- <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                   <a href="{% url 'ticket' %}" class="btn btn-light">Book Your Ticket</a>
                 </div>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="card shadow">
-                <div class="card-body">
-                  <img src="{% static 'images/kochi.png' %}" id="img2" alt="">
-                  <!-- <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-                  <a href="{% url 'track' %}" class="btn btn-light">Find Your Metro</a>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
        
 {% endblock %}

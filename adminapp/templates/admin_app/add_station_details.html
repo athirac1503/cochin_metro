@@ -1,0 +1,93 @@
+{% extends 'admin_app/admin_master.html' %}
+{% load static %}
+{% block admin_profile %}
+<style>
+   h1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding-top: 30px;
+        font-weight: bold;
+    }
+  .form-control{
+        width: 400px;
+        margin-top: 10px;
+        
+    }
+    label{
+        margin-top: 10px;
+        
+    }
+    textarea{
+        width: 400px;
+        height: 100px;
+    }
+    
+    .btn{
+        background-color: black;
+        color: #fff;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+    #inputGroupFile01{
+      width: 200px;
+    }
+    .main1{
+      padding-left: 200px;
+      padding-top: 20px;
+    }
+    .form-control1{
+      width: 200px;
+    }
+</style>
+
+<h1>ADD STATION & STATION DETAILS</h1>
+
+<form action="" method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="main1">
+      <div class="input-group mb-3">
+          <label  class="input" for="inputGroupFile01">Add image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input style="width: 100px;" type="file" name="img" class="form-control1" id="">
+      </div>
+      <div class="mb-3 row">
+          <label for="" class="col-sm-2 col-form-label input">Station Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="name" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="" class="col-sm-2 col-form-label ">Station Address</label>
+          <div class="col-sm-10">
+             <textarea name="address" id=""  cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="" class="col-sm-2 col-form-label input">Platform type</label>
+          <div class="col-sm-10">
+            <input type="text" name="platform" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="row row1 mb-3">
+          <label for="inputfair" class="col-sm-2 col-form-label">Distance</label>
+          <div class="col-sm-10">
+            <input type="text" name="dist" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="" class="col-sm-2 col-form-label input">Contact number1</label>
+          <div class="col-sm-10">
+            <input type="text" name="num1" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="" class="col-sm-2 col-form-label input">Contact number2</label>
+          <div class="col-sm-10">
+            <input type="text" name="num2" class="form-control" id="inputPassword">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-light">UPLOAD</button>
+        <button type="reset" class="btn btn-light" >CANCEL</button>
+
+  </div>
+</form>
+{% endblock %}

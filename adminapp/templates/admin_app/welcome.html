@@ -2,7 +2,16 @@
 {% load static %}
 {% block admin_profile %}
 <link rel="stylesheet" href="{% static 'css/wel.css' %}">
+<style>
+  h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 150px;
+}
+</style>
 
-<h1>Welcome admin</h1>
+<h1>Welcome {{wel.user_name|capfirst}}....</h1>
 
   {% endblock %}
